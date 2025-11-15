@@ -8,7 +8,7 @@
 | Helina Tarekegn | UGR-9858-13 |
 | Mekdes Assefa   | UGR-1419-15 |
 | Meklit Shiferaw | UGR-5036-15 |
-| Meklit Tadie    | UGR-3049-15 |
+ 
  
 
 ## Project Proposal
