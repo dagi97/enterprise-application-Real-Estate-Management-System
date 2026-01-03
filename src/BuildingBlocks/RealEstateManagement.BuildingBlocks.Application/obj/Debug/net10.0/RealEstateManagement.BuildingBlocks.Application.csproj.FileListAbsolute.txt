@@ -1,0 +1,11 @@
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\bin\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.deps.json
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\bin\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.dll
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\bin\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.pdb
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.AssemblyInfoInputs.cache
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.AssemblyInfo.cs
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.dll
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\refint\RealEstateManagement.BuildingBlocks.Application.dll
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Application.pdb
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Application\obj\Debug\net10.0\ref\RealEstateManagement.BuildingBlocks.Application.dll

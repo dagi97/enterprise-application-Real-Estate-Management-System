@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateManagement.PropertyManagement.Domain\RealEstateManagement.PropertyManagement.Domain.csproj" />
+    <ProjectReference Include="..\RealEstateManagement.PropertyManagement.Application\RealEstateManagement.PropertyManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\RealEstateManagement.BuildingBlocks.Infrastructure\RealEstateManagement.BuildingBlocks.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

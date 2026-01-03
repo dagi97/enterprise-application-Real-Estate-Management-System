@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dH3JYiOzI7I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dagmawit\\RealEstateManagement\\src\\Modules\\PropertyManagement\\RealEstateManagement.PropertyManagement.Api\\RealEstateManagement.PropertyManagement.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dagmawit\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "C:\\Users\\Dagmawit\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
