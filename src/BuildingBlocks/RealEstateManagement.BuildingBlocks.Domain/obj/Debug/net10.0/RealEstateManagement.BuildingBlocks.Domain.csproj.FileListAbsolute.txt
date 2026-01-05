@@ -9,3 +9,4 @@ C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.B
 C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Domain\obj\Debug\net10.0\refint\RealEstateManagement.BuildingBlocks.Domain.dll
 C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Domain\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Domain.pdb
 C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Domain\obj\Debug\net10.0\ref\RealEstateManagement.BuildingBlocks.Domain.dll
+C:\Users\Dagmawit\RealEstateManagement\src\BuildingBlocks\RealEstateManagement.BuildingBlocks.Domain\obj\Debug\net10.0\RealEstateManagement.BuildingBlocks.Domain.sourcelink.json

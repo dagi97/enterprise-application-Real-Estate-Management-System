@@ -17,3 +17,4 @@ C:\Users\Dagmawit\RealEstateManagement\src\Modules\PropertyManagement\RealEstate
 C:\Users\Dagmawit\RealEstateManagement\src\Modules\PropertyManagement\RealEstateManagement.PropertyManagement.Application\obj\Debug\net10.0\refint\RealEstateManagement.PropertyManagement.Application.dll
 C:\Users\Dagmawit\RealEstateManagement\src\Modules\PropertyManagement\RealEstateManagement.PropertyManagement.Application\obj\Debug\net10.0\RealEstateManagement.PropertyManagement.Application.pdb
 C:\Users\Dagmawit\RealEstateManagement\src\Modules\PropertyManagement\RealEstateManagement.PropertyManagement.Application\obj\Debug\net10.0\ref\RealEstateManagement.PropertyManagement.Application.dll
+C:\Users\Dagmawit\RealEstateManagement\src\Modules\PropertyManagement\RealEstateManagement.PropertyManagement.Application\obj\Debug\net10.0\RealEstateManagement.PropertyManagement.Application.sourcelink.json

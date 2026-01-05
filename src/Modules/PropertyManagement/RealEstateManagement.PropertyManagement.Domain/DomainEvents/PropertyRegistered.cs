@@ -1,3 +1,5 @@
-namespace RealEstateManagement.Property.Domain.Events;
+using RealEstateManagement.Property.Domain.ValueObjects;
 
-public sealed record PropertyRegistered(Guid PropertyId);
+namespace RealEstate.Property.Domain.Events;
+
+public sealed record PropertyRegistered(PropertyId PropertyId, DateTime OccurredOn) : IDomainEvent;

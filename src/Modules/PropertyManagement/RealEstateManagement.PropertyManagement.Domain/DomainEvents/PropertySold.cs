@@ -1,5 +1,5 @@
 using RealEstateManagement.Property.Domain.ValueObjects;
 
-namespace RealEstateManagement.Property.Domain.Events;
+namespace RealEstate.Property.Domain.Events;
 
-public sealed record PropertySold(PropertyId PropertyId);
+public sealed record PropertySold(PropertyId PropertyId, DateTime OccurredOn) : IDomainEvent;
