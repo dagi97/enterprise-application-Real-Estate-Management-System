@@ -9,8 +9,7 @@ namespace RealEstate.Property.Application.DomainEventHandlers
     {
         public Task Handle(PropertyRegisteredNotification notification, CancellationToken cancellationToken)
         {
-            
-            Console.WriteLine($"[In-Process Event] Property registered: {notification.DomainEvent.PropertyId}");
+             Console.WriteLine($"[In-Process Event] Property registered: {notification.DomainEvent.PropertyId}");
             return Task.CompletedTask;
         }
     }
@@ -38,6 +37,24 @@ namespace RealEstate.Property.Application.DomainEventHandlers
         public Task Handle(PropertyUpdatedNotification notification, CancellationToken cancellationToken)
         {
             Console.WriteLine($"[In-Process Event] Property updated: {notification.DomainEvent.PropertyId}");
+            return Task.CompletedTask;
+        }
+    }
+
+    public sealed class PropertyReservationCancelledHandler : INotificationHandler<PropertyReservationCancelledNotification>
+    {
+        public Task Handle(PropertyReservationCancelledNotification notification, CancellationToken cancellationToken)
+        {
+            Console.WriteLine($"[In-Process Event] Property reservation cancelled: {notification.DomainEvent.PropertyId.Id}");
+            return Task.CompletedTask;
+        }
+    }
+
+    public sealed class PropertyWithdrawnHandler : INotificationHandler<PropertyWithdrawnNotification>
+    {
+        public Task Handle(PropertyWithdrawnNotification notification, CancellationToken cancellationToken)
+        {
+            Console.WriteLine($"[In-Process Event] Property withdrawn: {notification.DomainEvent.PropertyId.Id}");
             return Task.CompletedTask;
         }
     }

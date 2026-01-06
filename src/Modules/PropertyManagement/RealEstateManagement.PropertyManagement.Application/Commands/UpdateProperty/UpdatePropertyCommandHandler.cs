@@ -2,7 +2,6 @@ using MediatR;
 using RealEstate.Property.Application.Interfaces;
 using RealEstateManagement.Property.Domain.ValueObjects;
 using RealEstate.Shared.Domain.ValueObjects;
-using RealEstate.Property.Application.Commands.UpdateProperty;
 
 namespace RealEstate.Property.Application.Commands.UpdateProperty;
 
@@ -27,22 +26,38 @@ public sealed class UpdatePropertyCommandHandler
         if (property is null)
             throw new InvalidOperationException($"Property with ID {request.PropertyId} not found");
 
-        var address = new Address(
-            request.Street,
-            request.City,
-            request.SubCity,
-            request.ZipCode
-        );
+        Address? address = null;
+        if (request.Street != null && request.City != null && request.SubCity != null && request.ZipCode != null)
+        {
+            address = new Address(request.Street, request.City, request.SubCity, request.ZipCode);
+        }
 
-        var price = new Money(request.PriceAmount, request.Currency);
+        Money? price = null;
+        if (request.PriceAmount.HasValue && request.Currency != null)
+        {
+            price = new Money(request.PriceAmount.Value, request.Currency);
+        }
 
-        property.UpdateAddress(address);
-        property.UpdatePrice(price);
+        PropertyFeatures? features = null;
+        if (request.SizeSqMeters.HasValue && request.Bedrooms.HasValue && 
+            request.Bathrooms.HasValue && request.YearBuilt.HasValue)
+        {
+            features = new PropertyFeatures(
+                request.SizeSqMeters.Value,
+                request.Bedrooms.Value,
+                request.Bathrooms.Value,
+                request.YearBuilt.Value);
+        }
 
-         await _repository.UpdateAsync(property, ct);
+        property.UpdateDetails(address, price, features);
+
+        // Save to database (includes saving events to Outbox)
+        await _repository.UpdateAsync(property, ct);
         
-         await _eventDispatcher.DispatchDomainEventsAsync(property, ct);
+        // Dispatch events for in-process handling via MediatR
+        await _eventDispatcher.DispatchDomainEventsAsync(property, ct);
         
-         property.ClearDomainEvents();
+        // Clear domain events after publishing
+        property.ClearDomainEvents();
     }
 }

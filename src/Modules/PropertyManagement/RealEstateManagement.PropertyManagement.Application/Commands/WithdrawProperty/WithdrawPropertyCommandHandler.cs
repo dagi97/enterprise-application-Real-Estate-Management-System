@@ -1,16 +1,15 @@
 using MediatR;
 using RealEstate.Property.Application.Interfaces;
-using RealEstateManagement.Property.Domain.ValueObjects;
 
-namespace RealEstate.Property.Application.Commands.ReserveProperty;
+namespace RealEstate.Property.Application.Commands.WithdrawProperty;
 
-public sealed class ReservePropertyCommandHandler
-    : IRequestHandler<ReservePropertyCommand>
+public sealed class WithdrawPropertyCommandHandler
+    : IRequestHandler<WithdrawPropertyCommand>
 {
     private readonly IPropertyRepository _repository;
     private readonly IDomainEventDispatcher _eventDispatcher;
 
-    public ReservePropertyCommandHandler(
+    public WithdrawPropertyCommandHandler(
         IPropertyRepository repository,
         IDomainEventDispatcher eventDispatcher)
     {
@@ -18,14 +17,14 @@ public sealed class ReservePropertyCommandHandler
         _eventDispatcher = eventDispatcher;
     }
 
-    public async Task Handle(ReservePropertyCommand request, CancellationToken cancellationToken)
+    public async Task Handle(WithdrawPropertyCommand request, CancellationToken cancellationToken)
     {
         var property = await _repository.GetByIdAsync(request.PropertyId, cancellationToken);
 
         if (property is null)
             throw new InvalidOperationException($"Property with ID {request.PropertyId} not found");
 
-        property.Reserve(new OwnerId(request.OwnerId));
+        property.Withdraw();
 
         // Save to database (includes saving events to Outbox)
         await _repository.UpdateAsync(property, cancellationToken);
@@ -37,4 +36,5 @@ public sealed class ReservePropertyCommandHandler
         property.ClearDomainEvents();
     }
 }
+
 

@@ -22,19 +22,25 @@ public sealed class RegisterPropertyCommandHandler
 
     public async Task<Guid> Handle(RegisterPropertyCommand request, CancellationToken cancellationToken)
     {
-         var propertyId = Guid.NewGuid();
+        // Generate unique PropertyId on the server side
+        var propertyId = Guid.NewGuid();
         
         var property = new PropertyAggregate(
             new PropertyId(propertyId),
+            new BranchId(request.BranchId),
             new Address(request.Street, request.City, request.SubCity, request.ZipCode),
-            new Money(request.PriceAmount, request.Currency)
+            new Money(request.PriceAmount, request.Currency),
+            new PropertyFeatures(request.SizeSqMeters, request.Bedrooms, request.Bathrooms, request.YearBuilt)
         );
 
-         await _repository.AddAsync(property, cancellationToken);
+        // Save to database (includes saving events to Outbox)
+        await _repository.AddAsync(property, cancellationToken);
         
-         await _eventDispatcher.DispatchDomainEventsAsync(property, cancellationToken);
+        // Dispatch events for in-process handling via MediatR
+        await _eventDispatcher.DispatchDomainEventsAsync(property, cancellationToken);
         
-         property.ClearDomainEvents();
+        // Clear domain events after publishing
+        property.ClearDomainEvents();
         
         return propertyId;
     }
