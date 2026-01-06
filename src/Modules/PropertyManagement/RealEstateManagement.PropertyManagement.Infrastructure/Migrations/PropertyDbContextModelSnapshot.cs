@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using RealEstate.Property.Infrastructure.Persistence;
-using RealEstate.Property.Infrastructure.Messaging;
 
 #nullable disable
 
@@ -30,6 +29,14 @@ namespace RealEstate.Property.Infrastructure.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("Id");
 
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("BranchId");
+
+                    b.Property<Guid?>("OwnerId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("OwnerId");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -38,6 +45,46 @@ namespace RealEstate.Property.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Properties", "property");
+                });
+
+            modelBuilder.Entity("RealEstate.Property.Domain.Entities.PropertyHistory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid")
+                        .HasColumnName("Id");
+
+                    b.Property<string>("ChangeType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTime>("ChangedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ChangedBy")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("NewValue")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<string>("OldValue")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<Guid>("PropertyId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("PropertyId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PropertyId");
+
+                    b.ToTable("PropertyHistories", "property");
                 });
 
             modelBuilder.Entity("RealEstate.Property.Infrastructure.Messaging.OutboxMessage", b =>
@@ -69,29 +116,6 @@ namespace RealEstate.Property.Infrastructure.Migrations
 
             modelBuilder.Entity("RealEstate.Property.Domain.Aggregates.Property", b =>
                 {
-                    b.OwnsOne("RealEstate.Property.Domain.Entities.Owner", "Owner", b1 =>
-                        {
-                            b1.Property<Guid>("PropertyId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<string>("Name")
-                                .IsRequired()
-                                .HasMaxLength(200)
-                                .HasColumnType("character varying(200)")
-                                .HasColumnName("OwnerName");
-
-                            b1.Property<Guid>("OwnerId")
-                                .HasColumnType("uuid")
-                                .HasColumnName("OwnerId");
-
-                            b1.HasKey("PropertyId");
-
-                            b1.ToTable("Properties", "property");
-
-                            b1.WithOwner()
-                                .HasForeignKey("PropertyId");
-                        });
-
                     b.OwnsOne("RealEstate.Property.Domain.ValueObjects.Address", "Address", b1 =>
                         {
                             b1.Property<Guid>("PropertyId")
@@ -141,9 +165,39 @@ namespace RealEstate.Property.Infrastructure.Migrations
 
                             b1.Property<string>("Currency")
                                 .IsRequired()
-                                .HasMaxLength(3)
-                                .HasColumnType("character varying(3)")
+                                .HasMaxLength(10)
+                                .HasColumnType("character varying(10)")
                                 .HasColumnName("Currency");
+
+                            b1.HasKey("PropertyId");
+
+                            b1.ToTable("Properties", "property");
+
+                            b1.WithOwner()
+                                .HasForeignKey("PropertyId");
+                        });
+
+                    b.OwnsOne("RealEstate.Shared.Domain.ValueObjects.PropertyFeatures", "Features", b1 =>
+                        {
+                            b1.Property<Guid>("PropertyId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<int>("Bathrooms")
+                                .HasColumnType("integer")
+                                .HasColumnName("Bathrooms");
+
+                            b1.Property<int>("Bedrooms")
+                                .HasColumnType("integer")
+                                .HasColumnName("Bedrooms");
+
+                            b1.Property<decimal>("SizeSqMeters")
+                                .HasPrecision(18, 2)
+                                .HasColumnType("numeric(18,2)")
+                                .HasColumnName("SizeSqMeters");
+
+                            b1.Property<int>("YearBuilt")
+                                .HasColumnType("integer")
+                                .HasColumnName("YearBuilt");
 
                             b1.HasKey("PropertyId");
 
@@ -156,7 +210,8 @@ namespace RealEstate.Property.Infrastructure.Migrations
                     b.Navigation("Address")
                         .IsRequired();
 
-                    b.Navigation("Owner");
+                    b.Navigation("Features")
+                        .IsRequired();
 
                     b.Navigation("Price")
                         .IsRequired();

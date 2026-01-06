@@ -58,7 +58,7 @@ namespace RealEstate.Property.Infrastructure.Migrations
                 column: "ProcessedOn");
         }
 
-        
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

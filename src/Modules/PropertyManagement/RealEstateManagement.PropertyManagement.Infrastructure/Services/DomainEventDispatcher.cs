@@ -41,6 +41,7 @@ public sealed class DomainEventDispatcher : IDomainEventDispatcher
             PropertySold evt => new PropertySoldNotification(evt),
             PropertyUpdated evt => new PropertyUpdatedNotification(evt),
             PropertyReservationCancelled evt => new PropertyReservationCancelledNotification(evt),
+            PropertyWithdrawn evt => new PropertyWithdrawnNotification(evt),
             _ => null
         };
     }
