@@ -4,5 +4,6 @@ public enum PropertyStatus
 {
     Available,
     Reserved,
-    Sold
+    Sold,
+    Withdrawn
 }

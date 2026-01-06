@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealEstateManagement.BuildingBlocks.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc8926af103866e1a7fd20ef670aed30e4903837")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f239a3f367bc6ee9c5b9106ea8e90f20fa9c13fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealEstateManagement.BuildingBlocks.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealEstateManagement.BuildingBlocks.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
