@@ -1,3 +1,14 @@
-namespace RealEstateManagement.Property.Domain.Events;
+using RealEstateManagement.Property.Domain.ValueObjects;
+using RealEstate.Shared.Domain.ValueObjects;
 
-public sealed record PropertyUpdated(Guid PropertyId);
+namespace RealEstate.Property.Domain.Events;
+
+public sealed record PropertyUpdated(
+    PropertyId PropertyId,
+    Address? OldAddress,
+    Address? NewAddress,
+    Money? OldPrice,
+    Money? NewPrice,
+    DateTime OccurredOn
+) : IDomainEvent;
+
