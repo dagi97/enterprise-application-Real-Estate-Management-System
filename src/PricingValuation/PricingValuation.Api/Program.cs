@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.Authority = builder.Configuration["Keycloak:Authority"] ?? "http://localhost:8080/realms/master";
+        options.Authority = builder.Configuration["Keycloak:Authority"] ?? "http://localhost:8080/realms/realestate-management";
         options.Audience = builder.Configuration["Keycloak:Audience"] ?? "account";
         options.RequireHttpsMetadata = false;
         options.TokenValidationParameters = new TokenValidationParameters
@@ -42,14 +42,15 @@ builder.Services.AddAuthorization();
 // MediatR
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(EstimatePriceCommand).Assembly));
 
-// Entity Framework
+// Entity Framework - Shared database with schema separation
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? 
+    "Server=localhost,1433;Database=RealEstateManagement;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;";
+
 builder.Services.AddDbContext<PricingValuationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? 
-        "Server=localhost,1433;Database=PricingValuation;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;"));
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddDbContext<OutboxDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? 
-        "Server=localhost,1433;Database=PricingValuation;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;"));
+    options.UseSqlServer(connectionString));
 
 // Repositories
 builder.Services.AddScoped<IPriceEstimateRepository, PriceEstimateRepository>();
