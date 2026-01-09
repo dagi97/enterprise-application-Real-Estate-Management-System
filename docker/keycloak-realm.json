@@ -1,0 +1,103 @@
+{
+  "realm": "realestate-management",
+  "enabled": true,
+  "displayName": "Real Estate Management System",
+  "clients": [
+    {
+      "clientId": "realestate-api",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "realestate-secret-key",
+      "redirectUris": [
+        "http://localhost:5000/*",
+        "http://localhost:5001/*",
+        "http://localhost:5002/*"
+      ],
+      "webOrigins": [
+        "*"
+      ],
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "protocol": "openid-connect",
+      "attributes": {
+        "access.token.lifespan": "3600",
+        "access.token.audience": "account"
+      }
+    },
+    {
+      "clientId": "realestate-swagger",
+      "enabled": true,
+      "publicClient": true,
+      "redirectUris": [
+        "http://localhost:5000/swagger/oauth2-redirect.html",
+        "http://localhost:5001/swagger/oauth2-redirect.html",
+        "http://localhost:5002/swagger/oauth2-redirect.html"
+      ],
+      "webOrigins": [
+        "*"
+      ],
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "protocol": "openid-connect"
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "BranchManager",
+        "description": "Branch Manager Role"
+      },
+      {
+        "name": "LoanOfficer",
+        "description": "Loan Officer Role"
+      },
+      {
+        "name": "SalesAgent",
+        "description": "Sales Agent Role"
+      },
+      {
+        "name": "Admin",
+        "description": "Administrator Role"
+      }
+    ]
+  },
+  "users": [
+    {
+      "username": "admin",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "admin@realestate.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "Admin"
+      ]
+    },
+    {
+      "username": "branchmanager",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "manager@realestate.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "BranchManager"
+      ]
+    }
+  ]
+}
+
