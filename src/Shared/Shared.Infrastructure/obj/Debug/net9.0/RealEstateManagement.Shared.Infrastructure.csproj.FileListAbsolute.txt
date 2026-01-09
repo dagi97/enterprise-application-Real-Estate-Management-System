@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.sourcelink.json
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\bin\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.deps.json
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\bin\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\bin\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.pdb
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\bin\Debug\net9.0\RealEstateManagement.Shared.Domain.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\bin\Debug\net9.0\RealEstateManagement.Shared.Domain.pdb
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEsta.91F28664.Up2Date
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\refint\RealEstateManagement.Shared.Infrastructure.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\RealEstateManagement.Shared.Infrastructure.pdb
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\ref\RealEstateManagement.Shared.Infrastructure.dll
