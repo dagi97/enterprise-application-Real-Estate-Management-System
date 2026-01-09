@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\PropertyManagement\PropertyManagement.Api\obj\Debug\net9.0\RealEstateManagement.PropertyManagement.Api.sourcelink.json

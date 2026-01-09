@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/RealEstateManagement.BuildingBlocks.Application/RealEstateManagement.BuildingBlocks.Application.csproj" />
+    <Project Path="src/BuildingBlocks/RealEstateManagement.BuildingBlocks.Domain/RealEstateManagement.BuildingBlocks.Domain.csproj" />
+    <Project Path="src/BuildingBlocks/RealEstateManagement.BuildingBlocks.Infrastructure/RealEstateManagement.BuildingBlocks.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/PropertyManagement/">
+    <Project Path="src/Modules/PropertyManagement/RealEstateManagement.PropertyManagement.Api/RealEstateManagement.PropertyManagement.Api.csproj" />
+    <Project Path="src/Modules/PropertyManagement/RealEstateManagement.PropertyManagement.Application/RealEstateManagement.PropertyManagement.Application.csproj" />
+    <Project Path="src/Modules/PropertyManagement/RealEstateManagement.PropertyManagement.Domain/RealEstateManagement.PropertyManagement.Domain.csproj" />
+    <Project Path="src/Modules/PropertyManagement/RealEstateManagement.PropertyManagement.Infrastructure/RealEstateManagement.PropertyManagement.Infrastructure.csproj" />
+  </Folder>
+</Solution>
