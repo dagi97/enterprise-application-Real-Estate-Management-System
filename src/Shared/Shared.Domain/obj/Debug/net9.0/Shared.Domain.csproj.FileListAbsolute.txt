@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\bin\Debug\net9.0\Shared.Domain.deps.json
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\bin\Debug\net9.0\Shared.Domain.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\bin\Debug\net9.0\Shared.Domain.pdb
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\refint\Shared.Domain.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.pdb
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\ref\Shared.Domain.dll
+C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Domain\obj\Debug\net9.0\Shared.Domain.sourcelink.json
