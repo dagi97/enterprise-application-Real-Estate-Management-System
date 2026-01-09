@@ -1,6 +1,0 @@
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.AssemblyInfo.cs
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Assignments\realestate_management\src\Shared\Shared.Infrastructure\obj\Debug\net9.0\Shared.Infrastructure.sourcelink.json
